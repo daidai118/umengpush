@@ -1,0 +1,21 @@
+{
+  "name": "daidai118/yii2-umengpush",
+  "description": "umengpush",
+  "type": "yii2-extension",
+  "keywords": ["yii2","extension"],
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "daidai",
+	  "email": "13673811@qq.com"
+	}
+  ],
+  "require": {
+	"yiisoft/yii2": "*"
+  },
+  "autoload": {
+	"psr-4": {
+	  "daidai118\\umengpush\\": ""
+	}
+  }
+}
