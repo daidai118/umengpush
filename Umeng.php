@@ -1,5 +1,5 @@
 <?php
-
+namespace daidai118\umengpush;
 /**
  * Created by PhpStorm.
  * User: daidai
