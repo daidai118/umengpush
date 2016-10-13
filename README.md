@@ -51,36 +51,11 @@ Yii::$app->pushios->customNotification('fs2',[
 			'text'=>'a什么鬼'.date("h:i:s"),
 		]);
 ```
+按照设备推送
 ```
-Yii::$app->push->send([
-			'title'=>'ashenme',
-			'text'=>'bb',
-			"type"=>"customizedcast",
-			'alias'=>'fs1',
-			'alias_type'=>'fs',
-			"payload"=>["body"=>[
-				'ticker'=>'zzz',
-				'title'=>'状态变更通知!',
-				'text'=>'a什么鬼'.date("h:i:s"),
-				'after_open'=>'',
-
-			]]]);
-```
-```
-Yii::$app->push->sendNotificationToDevices([
-			"device_tokens" => "Atni-XXxxxxxxxxxxxxxxxxxxxx_",
-			"type" => "customizedcast",
-			'alias' => 'fs289',
-
-			'alias_type' => 'fs',
-			"payload" => [
-				"body" => [
-					'ticker' => 'zzz',
-					'title' => '状态变更通知!',
-					'text' => 'text' . date("h:i:s"),
-					'after_open' => '',
-
-				]
-			]
+Yii::$app->push->sendNotificationToDevices('devices_token',[
+			'ticker'=>'abcdef',
+			'title'=>'abcdef!',
+			'text'=>'a什么鬼'.date("h:i:s"),
 		]);
 ```
